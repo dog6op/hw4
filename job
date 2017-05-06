@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH -J SSort
+#SBATCH -o SSort.o
+#SBATCH -n 64
+#SBATCH -p normal
+#SBATCH -t 01:00:00
+#SBATCH --mail-user=sg4802@nyu.edu
+#SBATCH --mail-type=begin
+#SBATCH --mail-type=end
+ibrun ./ssort 800 5000
